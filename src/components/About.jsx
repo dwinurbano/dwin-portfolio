@@ -10,15 +10,13 @@ const About = () => {
                 </p>
             </div>
             <p className ="text-xl mt-15">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            A 22-year-old graduate student at the Polytechnic University of the Philippines studying BS Computer Engineering. He resides in Brgy. Apolonio Samson Quezon City. Interned at Taters Enterprises Inc and Pixel8 Web Solutions while interested in computer-related disciplines, notably programming. He is also interested in art and has worked on several projects such as Madagascar, Jollibee commercials, Prime video series, DragRace Philippines, and so on. In his spare time, he participates in dancing competitions and is a member of the FAO Dance Crew, where he serves as president.
             </p>
 
             <br/>
 
             <p className="text-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eaque in vel quibusdam ratione eum accusantium incidunt temporibus consequatur sapiente, quod aliquam fugiat beatae asperiores sunt reiciendis officiis et labore?
+            He also has some societal affiliations, specifically with the Youth for Christ group, where he serves as the Cluster Youth Head of Metro-Manila West B4 from 2019 until the present. During Junior High, he was selected as SSG President and was eligible to participate in the HB Centrex Leader Scholarship and SYDP Scholarship offered by the local city in 2019.Despite this, he was able to flourish intellectually from elementary school, graduating as a 5th Honor student in Grade 5, graduating with Honors in Junior and Senior High School, and being a member of the Dean's List and President List throughout several semesters of college.
             
             </p>
         </div>

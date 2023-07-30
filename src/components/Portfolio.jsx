@@ -1,8 +1,8 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import taters from "../assets/portfolio/taters.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/arrayDestruct.jpg";
+import inferno from "../assets/portfolio/inferno.jpg";
+import pixel8 from "../assets/portfolio/pixel8.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -13,16 +13,16 @@ const Portfolio = () => {
     const portfolios = [
         {
             id:1,
-            src: arrayDestruct
+            src: taters
             // create links for works
         },
         {
             id:2,
-            src: reactParallax
+            src: pixel8
         },
         {
             id:3,
-            src: navbar
+            src: inferno
         },
         {
             id:4,
@@ -53,7 +53,7 @@ const Portfolio = () => {
                     Portfolio
                 </p>
                 <p className = "py-6">
-                    Check out some of my work right here
+                Check out some of the projects I've worked on.
                 </p>
             </div>
 
@@ -66,7 +66,7 @@ const Portfolio = () => {
                   className="duration-200 rounded-md hover:scale-105"/>
                   <div className="flex items-center justify-center">
                       <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                      {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button> */}
                   </div>
               </div>
                 
