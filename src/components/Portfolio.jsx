@@ -1,10 +1,19 @@
 import React from 'react'
 import taters from "../assets/portfolio/taters.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
+// import installNode from "../assets/portfolio/installNode.jpg";
 import inferno from "../assets/portfolio/inferno.jpg";
 import pixel8 from "../assets/portfolio/pixel8.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+// import reactWeather from "../assets/portfolio/reactWeather.jpg";
+
+
+
+
+
+
+
+
+
 
 const Portfolio = () => {
 
@@ -13,32 +22,40 @@ const Portfolio = () => {
     const portfolios = [
         {
             id:1,
-            src: taters
+            src:taters,
+            url:"https://www.ilovetaters.com"
             // create links for works
         },
         {
             id:2,
-            src: pixel8
+            src: pixel8,
+            url: "https://drive.google.com/file/d/1X7pBHFsfKJAAIWglOkCyZMDVEgplj7j_/view?usp=sharing"
         },
         {
             id:3,
-            src: inferno
-        },
-        {
-            id:4,
-            src: reactSmooth
-        },
-        {
-            id:5,
-            src: installNode
-        },
-        {
-            id:6,
-            src: reactWeather
+            src: inferno,
+            url: "https://infernoph.wixsite.com/benilde"
         }
+
+        // {
+        //     id:4,
+        //     src: reactSmooth
+        // },
+        // {
+        //     id:5,
+        //     src: installNode
+        // },
+        // {
+        //     id:6,
+        //     src: reactWeather
+        // }
 
         
     ]
+
+    const newTab=url=>{
+        window.open(url)
+    }
 
 
 
@@ -60,12 +77,15 @@ const Portfolio = () => {
 
 
             <div className="grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0">
-            {portfolios.map(({id,src})=> (
+            {portfolios.map(({id,src,url})=> (
                   <div key={id} className = "rounded-lg shadow-md shadow-gray-600">
                   <img src={src} alt="" 
                   className="duration-200 rounded-md hover:scale-105"/>
                   <div className="flex items-center justify-center">
-                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
+                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                      onClick={()=> newTab(url)}
+                      >
+                        Demo</button>
                       {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button> */}
                   </div>
               </div>
